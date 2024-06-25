@@ -1,0 +1,724 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "C_Identity_Utils_Swift",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "C_Identity_Utils_Swift"
+      },
+      {
+        "kind": "Import",
+        "name": "CIdentitySwift",
+        "printedName": "CIdentitySwift",
+        "declKind": "Import",
+        "moduleName": "C_Identity_Utils_Swift"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "C_Identity_Utils_Swift",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "C_Identity_Utils_Swift",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CIdentitySwift",
+        "printedName": "CIdentitySwift",
+        "declKind": "Import",
+        "moduleName": "C_Identity_Utils_Swift"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UtilsManagerDelegate",
+        "printedName": "UtilsManagerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "didRecivedError",
+            "printedName": "didRecivedError(credenceError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CredenceError",
+                "printedName": "CIdentitySwift.CredenceError",
+                "usr": "s:14CIdentitySwift13CredenceErrorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22C_Identity_Utils_Swift0B15ManagerDelegateP15didRecivedError08credenceH0y09CIdentityC008CredenceH0V_tF",
+            "mangledName": "$s22C_Identity_Utils_Swift0B15ManagerDelegateP15didRecivedError08credenceH0y09CIdentityC008CredenceH0V_tF",
+            "moduleName": "C_Identity_Utils_Swift",
+            "genericSig": "<τ_0_0 where τ_0_0 : C_Identity_Utils_Swift.UtilsManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : C_Identity_Utils_Swift.UtilsManagerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceivedMdlResponse",
+            "printedName": "didReceivedMdlResponse(mdlDataModel:credenceError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MDLDataModel",
+                "printedName": "CIdentitySwift.MDLDataModel",
+                "usr": "s:14CIdentitySwift12MDLDataModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CredenceError",
+                "printedName": "CIdentitySwift.CredenceError",
+                "usr": "s:14CIdentitySwift13CredenceErrorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22C_Identity_Utils_Swift0B15ManagerDelegateP22didReceivedMdlResponse12mdlDataModel13credenceErrory09CIdentityC007MDLDataL0C_AG08CredenceN0VtF",
+            "mangledName": "$s22C_Identity_Utils_Swift0B15ManagerDelegateP22didReceivedMdlResponse12mdlDataModel13credenceErrory09CIdentityC007MDLDataL0C_AG08CredenceN0VtF",
+            "moduleName": "C_Identity_Utils_Swift",
+            "genericSig": "<τ_0_0 where τ_0_0 : C_Identity_Utils_Swift.UtilsManagerDelegate>",
+            "sugared_genericSig": "<Self where Self : C_Identity_Utils_Swift.UtilsManagerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:22C_Identity_Utils_Swift0B15ManagerDelegateP",
+        "mangledName": "$s22C_Identity_Utils_Swift0B15ManagerDelegateP",
+        "moduleName": "C_Identity_Utils_Swift",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "C_Identity_Utils_Swift",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CIdentitySwift",
+        "printedName": "CIdentitySwift",
+        "declKind": "Import",
+        "moduleName": "C_Identity_Utils_Swift"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UtilsSDKManager",
+        "printedName": "UtilsSDKManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UtilsSDKManager",
+                "printedName": "C_Identity_Utils_Swift.UtilsSDKManager",
+                "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC6sharedACvpZ",
+            "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC6sharedACvpZ",
+            "moduleName": "C_Identity_Utils_Swift",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UtilsSDKManager",
+                    "printedName": "C_Identity_Utils_Swift.UtilsSDKManager",
+                    "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC6sharedACvgZ",
+                "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC6sharedACvgZ",
+                "moduleName": "C_Identity_Utils_Swift",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any C_Identity_Utils_Swift.UtilsManagerDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UtilsManagerDelegate",
+                    "printedName": "any C_Identity_Utils_Swift.UtilsManagerDelegate",
+                    "usr": "s:22C_Identity_Utils_Swift0B15ManagerDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC8delegateAA0B15ManagerDelegate_pSgvp",
+            "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC8delegateAA0B15ManagerDelegate_pSgvp",
+            "moduleName": "C_Identity_Utils_Swift",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any C_Identity_Utils_Swift.UtilsManagerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UtilsManagerDelegate",
+                        "printedName": "any C_Identity_Utils_Swift.UtilsManagerDelegate",
+                        "usr": "s:22C_Identity_Utils_Swift0B15ManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC8delegateAA0B15ManagerDelegate_pSgvg",
+                "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC8delegateAA0B15ManagerDelegate_pSgvg",
+                "moduleName": "C_Identity_Utils_Swift",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any C_Identity_Utils_Swift.UtilsManagerDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UtilsManagerDelegate",
+                        "printedName": "any C_Identity_Utils_Swift.UtilsManagerDelegate",
+                        "usr": "s:22C_Identity_Utils_Swift0B15ManagerDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC8delegateAA0B15ManagerDelegate_pSgvs",
+                "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC8delegateAA0B15ManagerDelegate_pSgvs",
+                "moduleName": "C_Identity_Utils_Swift",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC8delegateAA0B15ManagerDelegate_pSgvM",
+                "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC8delegateAA0B15ManagerDelegate_pSgvM",
+                "moduleName": "C_Identity_Utils_Swift",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "testQRCode",
+            "printedName": "testQRCode(qrCode:readerCertificate:readerCertificatePrivateKey:issuerCertificates:selectedDataIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.Data]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CIdentitySwift.DataIdentifier]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataIdentifier",
+                    "printedName": "CIdentitySwift.DataIdentifier",
+                    "usr": "s:14CIdentitySwift14DataIdentifierO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC10testQRCode6qrCode17readerCertificate0iJ10PrivateKey18issuerCertificates22selectedDataIdentifierySS_10Foundation0P0VALSayALGSay09CIdentityC00pQ0OGtF",
+            "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC10testQRCode6qrCode17readerCertificate0iJ10PrivateKey18issuerCertificates22selectedDataIdentifierySS_10Foundation0P0VALSayALGSay09CIdentityC00pQ0OGtF",
+            "moduleName": "C_Identity_Utils_Swift",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "testNFC",
+            "printedName": "testNFC(readerCertificate:readerCertificatePrivateKey:issuerCertificates:selectedDataIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.Data]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CIdentitySwift.DataIdentifier]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DataIdentifier",
+                    "printedName": "CIdentitySwift.DataIdentifier",
+                    "usr": "s:14CIdentitySwift14DataIdentifierO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC7testNFC17readerCertificate0gH10PrivateKey18issuerCertificates22selectedDataIdentifiery10Foundation0N0V_AKSayAKGSay09CIdentityC00nO0OGtF",
+            "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC7testNFC17readerCertificate0gH10PrivateKey18issuerCertificates22selectedDataIdentifiery10Foundation0N0V_AKSayAKGSay09CIdentityC00nO0OGtF",
+            "moduleName": "C_Identity_Utils_Swift",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceivedMdlResponse",
+            "printedName": "didReceivedMdlResponse(mdlDataModel:credenceError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MDLDataModel",
+                "printedName": "CIdentitySwift.MDLDataModel",
+                "usr": "s:14CIdentitySwift12MDLDataModelC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CredenceError",
+                "printedName": "CIdentitySwift.CredenceError",
+                "usr": "s:14CIdentitySwift13CredenceErrorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC22didReceivedMdlResponse12mdlDataModel13credenceErrory09CIdentityC007MDLDataK0C_AG08CredenceM0VtF",
+            "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC22didReceivedMdlResponse12mdlDataModel13credenceErrory09CIdentityC007MDLDataK0C_AG08CredenceM0VtF",
+            "moduleName": "C_Identity_Utils_Swift",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didRecivedError",
+            "printedName": "didRecivedError(credenceError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CredenceError",
+                "printedName": "CIdentitySwift.CredenceError",
+                "usr": "s:14CIdentitySwift13CredenceErrorV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC15didRecivedError08credenceG0y09CIdentityC008CredenceG0V_tF",
+            "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC15didRecivedError08credenceG0y09CIdentityC008CredenceG0V_tF",
+            "moduleName": "C_Identity_Utils_Swift",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didReceivedMdlRequest",
+            "printedName": "didReceivedMdlRequest(mdlRequest:bleConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BLEConfiguration",
+                "printedName": "CIdentitySwift.BLEConfiguration",
+                "usr": "s:14CIdentitySwift16BLEConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC21didReceivedMdlRequest03mdlH016bleConfigurationy10Foundation4DataV_09CIdentityC016BLEConfigurationVtF",
+            "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC21didReceivedMdlRequest03mdlH016bleConfigurationy10Foundation4DataV_09CIdentityC016BLEConfigurationVtF",
+            "moduleName": "C_Identity_Utils_Swift",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:22C_Identity_Utils_Swift0B10SDKManagerC",
+        "mangledName": "$s22C_Identity_Utils_Swift0B10SDKManagerC",
+        "moduleName": "C_Identity_Utils_Swift",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "SDKManagerDelegate",
+            "printedName": "SDKManagerDelegate",
+            "usr": "s:14CIdentitySwift18SDKManagerDelegateP",
+            "mangledName": "$s14CIdentitySwift18SDKManagerDelegateP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "C_Identity_Utils_Swift",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "C_Identity_Utils_Swift"
+      },
+      {
+        "kind": "Import",
+        "name": "CIdentitySwift",
+        "printedName": "CIdentitySwift",
+        "declKind": "Import",
+        "moduleName": "C_Identity_Utils_Swift"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/BLECentralHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 975,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/BLECentralHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1015,
+      "length": 4,
+      "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/BLECentralHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1059,
+      "length": 4,
+      "value": "0x02"
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/BLECentralHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1106,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/TransferService.swift",
+      "kind": "StringLiteral",
+      "offset": 200,
+      "length": 38,
+      "value": "\"00000008-a123-48ce-896b-4c76973373e6\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/TransferService.swift",
+      "kind": "StringLiteral",
+      "offset": 301,
+      "length": 38,
+      "value": "\"00000001-a123-48ce-896b-4c76973373e6\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/TransferService.swift",
+      "kind": "StringLiteral",
+      "offset": 409,
+      "length": 38,
+      "value": "\"00000002-a123-48ce-896b-4c76973373e6\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/TransferService.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 38,
+      "value": "\"00000003-a123-48ce-896b-4c76973373e6\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/TransferService.swift",
+      "kind": "StringLiteral",
+      "offset": 613,
+      "length": 38,
+      "value": "\"0000000a-a123-48ce-896b-4c76973373e6\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/TransferService.swift",
+      "kind": "StringLiteral",
+      "offset": 714,
+      "length": 38,
+      "value": "\"0000000b-a123-48ce-896b-4c76973373e6\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/TransferService.swift",
+      "kind": "StringLiteral",
+      "offset": 818,
+      "length": 38,
+      "value": "\"00000005-a123-48ce-896b-4c76973373e6\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/TransferService.swift",
+      "kind": "StringLiteral",
+      "offset": 930,
+      "length": 38,
+      "value": "\"00000006-a123-48ce-896b-4c76973373e6\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/TransferService.swift",
+      "kind": "StringLiteral",
+      "offset": 1042,
+      "length": 38,
+      "value": "\"00000007-a123-48ce-896b-4c76973373e6\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/BLEPeripheralHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1072,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/BLEPeripheralHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1101,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/BLEPeripheralHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1173,
+      "length": 4,
+      "value": "0x00"
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/BLEPeripheralHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1213,
+      "length": 4,
+      "value": "0x01"
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/BLEPeripheralHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1257,
+      "length": 4,
+      "value": "0x02"
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/BLEPeripheralHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1303,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Documents\/SDK\/Framework\/C_Identity_Utils_Swift\/C_Identity_Utils_Swift\/Other\/BLEPeripheralHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1341,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

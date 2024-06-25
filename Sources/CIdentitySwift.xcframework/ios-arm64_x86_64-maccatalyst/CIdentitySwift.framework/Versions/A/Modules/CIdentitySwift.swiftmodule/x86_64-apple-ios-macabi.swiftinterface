@@ -1,0 +1,206 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios16.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CIdentitySwift
+@_exported import CIdentitySwift
+import CoreBluetooth
+import CoreNFC
+import CryptoKit
+import Foundation
+import Security
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class DateManager {
+  public init()
+  public func currentDateAndTimeInEpoch() -> Swift.String
+  @objc deinit
+}
+public struct BLEConfiguration {
+  public let uuid: Swift.String
+  public let bleMode: CIdentitySwift.BleMode
+}
+public enum BleMode {
+  case Central, Peripheral
+  public static func == (a: CIdentitySwift.BleMode, b: CIdentitySwift.BleMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol SDKManagerDelegate : AnyObject {
+  func didRecivedError(credenceError: CIdentitySwift.CredenceError)
+  func didReceivedMdlRequest(mdlRequest: Foundation.Data, bleConfiguration: CIdentitySwift.BLEConfiguration)
+  func didReceivedMdlResponse(mdlDataModel: CIdentitySwift.MDLDataModel, credenceError: CIdentitySwift.CredenceError)
+}
+public enum LogTransferMode : Swift.String {
+  case blePheripheral
+  case bleCentral
+  case bleL2cap
+  case nfc
+  case wifi
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct CredenceError {
+  public let deviceEngagementError: CIdentitySwift.CredenceErrorStruct?
+  public let dataRetrievalError: CIdentitySwift.CredenceErrorStruct?
+  public let validationError: [CIdentitySwift.CredenceErrorStruct]
+}
+precedencegroup ExponentiationPrecedence {
+  associativity: left
+  higherThan: MultiplicationPrecedence
+  lowerThan: BitwiseShiftPrecedence
+}
+infix operator ** : ExponentiationPrecedence
+public struct BleErrorsConstants {
+  public static let CONNECTION_DISCONNECTED: Swift.String
+}
+extension ObjectiveC.NSObject : Any {
+}
+public enum DataIdentifier : Swift.String, Swift.CaseIterable {
+  case FamilyName
+  case GivenNames
+  case dateOfBirth
+  case IssueDate
+  case ExpiryDate
+  case IssuingCountry
+  case IssuingAuthority
+  case DocumentNumber
+  case Portrait
+  case DrivingPrivileges
+  case UnDistinguishingSign
+  case AdministrativeNumber
+  case Sex
+  case Height
+  case Weight
+  case EyeColor
+  case HairColor
+  case BirthPlace
+  case ResidentAddress
+  case PortraitCaptureDate
+  case AgeInYears
+  case AgeBirthYear
+  case AgeOverNN
+  case AgeOver18
+  case ageOver21
+  case IssuingJurisdiction
+  case Nationality
+  case ResidentCity
+  case ResidentState
+  case ResidentPostalCode
+  case ResidentCountry
+  case BiometricTemplateXX
+  case FamilyNameNationalCharacter
+  case GivenNameNationalCharacter
+  case SignatureUsualMark
+  case vehicleCategoryCode
+  case codes
+  case age
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [CIdentitySwift.DataIdentifier]
+  public typealias RawValue = Swift.String
+  public static var allCases: [CIdentitySwift.DataIdentifier] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Swift.String : Swift.Error {
+}
+public struct DrivingPrivilege {
+  public var codes: [CIdentitySwift.DrivingPrivilegeCodes]
+  public var expiryDate: Swift.String?
+  public var issueDate: Swift.String?
+  public var vehicleCategoryCode: Swift.String?
+  public var restrictions: Swift.String? {
+    get
+  }
+}
+public struct DrivingPrivilegeCodes {
+  public var code: Swift.String?
+  public var sign: Swift.String?
+  public var value: Swift.String?
+}
+@_hasMissingDesignatedInitializers public class MDLDataModel {
+  public var firstName: Swift.String?
+  public var lastName: Swift.String?
+  public var birthDate: Swift.String?
+  public var issueDate: Swift.String?
+  public var expiryDate: Swift.String?
+  public var documentNumber: Swift.String?
+  public var portrait: Swift.String?
+  public var sex: Swift.String?
+  public var eyeColor: Swift.String?
+  public var residentAddress: Swift.String?
+  public var issuingCountry: Swift.String?
+  public var issuingAuthority: Swift.String?
+  public var unDistinguishingSign: Swift.String?
+  public var administrativeNumber: Swift.String?
+  public var height: Swift.String?
+  public var weight: Swift.String?
+  public var hairColor: Swift.String?
+  public var birthPlace: Swift.String?
+  public var portraitCaptureDate: Swift.String?
+  public var ageInYears: Swift.String?
+  public var ageBirthYear: Swift.String?
+  public var ageOverNN: Swift.Bool?
+  public var ageOver18: Swift.Bool?
+  public var ageOver21: Swift.Bool?
+  public var issuingJurisdiction: Swift.String?
+  public var nationality: Swift.String?
+  public var residentCity: Swift.String?
+  public var residentState: Swift.String?
+  public var residentPostalCode: Swift.String?
+  public var residentCountry: Swift.String?
+  public var biometricTemplateXX: Swift.String?
+  public var familyNameNationalCharacter: Swift.String?
+  public var givenNameNationalCharacter: Swift.String?
+  public var signatureUsualMark: Swift.String?
+  public var organizationName: Swift.String?
+  public var drivingPrivileges: [CIdentitySwift.DrivingPrivilege]?
+  @objc deinit
+}
+public struct CredenceErrorStruct : Swift.Error {
+  public var component: Swift.String
+  public var componentCode: Swift.Int
+  public var subType: Swift.String
+  public var subTypeCode: Swift.Int
+}
+public struct DataRetrievalError {
+}
+extension Foundation.Data {
+  public var dataBytes: [Swift.UInt8] {
+    get
+  }
+}
+extension Foundation.Date {
+  public var millisecondsSince1970: Swift.Int64 {
+    get
+  }
+  public init(milliseconds: Swift.Int64)
+}
+@_hasMissingDesignatedInitializers public class SDKManager {
+  public static let shared: CIdentitySwift.SDKManager
+  public var delegate: (any CIdentitySwift.SDKManagerDelegate)?
+  public func configure(readerCertificate: Foundation.Data, readerCertificatePrivateKey: Foundation.Data, issuerCertificates: [Foundation.Data], selectedDataIdentifier: [CIdentitySwift.DataIdentifier])
+  public func createMdlRequest(from qrCode: Swift.String)
+  public func createMdlRequestFromNFC()
+  public func parseMdlResponse(response: Foundation.Data?, error: (any Swift.Error)?)
+  @objc deinit
+}
+public typealias Byte = Swift.UInt8
+public typealias Bytes = [CIdentitySwift.Byte]
+extension CIdentitySwift.BleMode : Swift.Equatable {}
+extension CIdentitySwift.BleMode : Swift.Hashable {}
+extension CIdentitySwift.LogTransferMode : Swift.Equatable {}
+extension CIdentitySwift.LogTransferMode : Swift.Hashable {}
+extension CIdentitySwift.LogTransferMode : Swift.RawRepresentable {}
+extension CIdentitySwift.DataIdentifier : Swift.Equatable {}
+extension CIdentitySwift.DataIdentifier : Swift.Hashable {}
+extension CIdentitySwift.DataIdentifier : Swift.RawRepresentable {}

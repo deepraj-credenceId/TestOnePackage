@@ -1,0 +1,6 @@
+framework module C_Identity_Utils_Swift {
+  umbrella header "C_Identity_Utils_Swift.h"
+  export *
+
+  module * { export * }
+}
